@@ -10,17 +10,19 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   alternates: { canonical: "/" },
   openGraph: {
-    type: "website",
-    url: site.url,
-    title: site.title,
-    description: site.description,
-    siteName: site.name,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: site.title,
-    description: site.description,
-  },
+  type: "website",
+  url: site.url,
+  title: site.title,
+  description: site.description,
+  siteName: site.name,
+  images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: site.title }],
+},
+twitter: {
+  card: "summary_large_image",
+  title: site.title,
+  description: site.description,
+  images: ["/twitter-image.png"],
+},
 };
 
 export default function RootLayout({
