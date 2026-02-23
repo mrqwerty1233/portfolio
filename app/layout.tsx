@@ -14,6 +14,21 @@ export const metadata: Metadata = {
   },
   description: site.description,
   metadataBase: new URL(site.url),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    title: site.title,
+    description: site.description,
+    siteName: site.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.title,
+    description: site.description,
+  },
 };
 
 export default function RootLayout({
