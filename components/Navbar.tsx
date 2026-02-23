@@ -9,8 +9,9 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
   { href: "/resume", label: "Resume" },
+  { href: "/contact", label: "Contact" },
+  
 ];
 
 function isActive(pathname: string, href: string) {
